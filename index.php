@@ -11,8 +11,12 @@
     }
   </style>
 </head>
-<body><h2>Privacy Policy</h2>
-  <p> built the Sagrado Corazón de Jesús app as a Free app. This SERVICE is provided by at no cost and is intended for use as is.
+<body>
+<?php
+$app = htmlspecialchars($_GET["app"]);
+?>
+  <h2>Privacy Policy</h2>
+  <p> Built the <?php echo $app; ?> app as a Free app. This SERVICE is provided by at no cost and is intended for use as is.
   </p>
   <p>This page is used to inform visitors regarding our policies with the collection, use, and
     disclosure of Personal Information if anyone decided to use our Service.
@@ -23,7 +27,7 @@
     in this Privacy Policy.
   </p>
   <p>The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible
-    at Sagrado Corazón de Jesús unless otherwise defined in this Privacy Policy.
+    at <?php echo $app; ?> unless otherwise defined in this Privacy Policy.
   </p>
   <p><strong>Information Collection and Use</strong></p>
   <p>For a better experience, while using our Service, we may require you to provide us with certain
